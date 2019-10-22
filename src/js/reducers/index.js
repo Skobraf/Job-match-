@@ -1,3 +1,4 @@
+import { ADD_ARTICLE } from '../constants/action-types';
 const initalState = {
     articles: []
 };
