@@ -1,14 +1,10 @@
-import { ADD_ARTICLE } from '../constants/action-types';
-const initalState = {
-    articles: []
-};
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
 
-function rootReducer(state = initalState, action) {
-    if (action.type === ADD_ARTICLE) {
-        return Object.assign({}, state, {
-            articles: state.articles.concat(action.payload)
-        });
-    }
-    return state;
-};
+import diplome from './diplome';
+import filier from './filier';
+import secteur from './secteur';
+
+const rootReducer = combineReducers({diplome, filier, secteur, routing: routerReducer });
+
 export default rootReducer;

@@ -1,4 +1,3 @@
-import { ADD_ARTICLE } from '../constants/action-types';
-export function addArticle(payload) {
-    return { type: ADD_ARTICLE, payload }
-};
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
+

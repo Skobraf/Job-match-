@@ -1,0 +1,212 @@
+{
+    "filier":[
+        {
+            "id_filier":1,
+            "nameFiliere":"Cuisine",
+             "metier":[
+                {
+                    "id_metier":1,
+                    "nameMetier":"Chef de cuisine",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"DTH ou BTS",
+                    "diplome":["DTH","BTS"]
+
+                },
+                {
+                    "id_metier":2,
+                    "nameMetier":"Cuisinier",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","DTH","BTS"]
+
+                },
+                {
+                    "id_metier":3,
+                    "nameMetier":"Commis de cuisine",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","DTH","BTS"]
+
+                },
+                {
+                    "id_metier":4,
+                    "nameMetier":"Plongeur",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"Aucun diplôme requis",
+                    "diplome":["Sans BAC","BAC","CQP","DTH","BTS"]
+
+                }
+            ]
+        },
+        {
+            "id_filier":2,
+            "nameFiliere":"Hôtellerie",
+            "metier":[
+                {
+                    "id_metier":5,
+                    "nameMetier":"Directeur de centre de loisirs",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","DTH","BTS"]
+
+                },
+                {
+                    "id_metier":6,
+                    "nameMetier":"Chef de village de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","DTH","BTS"]
+
+                },
+                {
+                    "id_metier":7,
+                    "nameMetier":"Responsable d’équipe d’animation",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                     "diplome":["CQP","DTH","BTS"]
+                },
+                {
+                    "id_metier":8,
+                    "nameMetier":"Animateur de club de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","DTH","BTS"]
+
+                }
+            ]
+        },
+        {
+            "id_filier":3,
+            "nameFiliere":"Restauration",
+            "metier":[
+                {
+                    "id_metier":12,
+                    "nameMetier":"Directeur de centre de loisirs",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","BTS"]
+
+                },
+                {
+                    "id_metier":6,
+                    "nameMetier":"Chef de village de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","BTS"]
+
+                },
+                {
+                    "id_metier":7,
+                    "nameMetier":"Responsable d’équipe d’animation",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                     "diplome":["CQP"]
+                },
+                {
+                    "id_metier":8,
+                    "nameMetier":"Animateur de club de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP"]
+
+                }
+            ]
+        },
+        {
+            "id_filier":4,
+            "nameFiliere":"Animation",
+            "metier":[
+                {
+                    "id_metier":5,
+                    "nameMetier":"Directeur de centre de loisirs",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","BTS"]
+
+                },
+                {
+                    "id_metier":6,
+                    "nameMetier":"Chef de village de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","BTS"]
+
+                },
+                {
+                    "id_metier":7,
+                    "nameMetier":"Responsable d’équipe d’animation",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                     "diplome":["CQP"]
+                },
+                {
+                    "id_metier":8,
+                    "nameMetier":"Animateur de club de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP"]
+
+                }
+            ]
+        },
+        {
+            "id_filier":5,
+            "nameFiliere":"Accueil",
+            "metier":[
+                {
+                    "id_metier":5,
+                    "nameMetier":"Directeur de centre de loisirs",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","BTS"]
+
+                },
+                {
+                    "id_metier":6,
+                    "nameMetier":"Chef de village de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP","BTS"]
+
+                },
+                {
+                    "id_metier":7,
+                    "nameMetier":"Responsable d’équipe d’animation",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                     "diplome":["CQP"]
+                },
+                {
+                    "id_metier":8,
+                    "nameMetier":"Animateur de club de vacances",
+                    "expérience":"2 ans",
+                    "description":"Trier, ordonner, laver et ranger la vaisselle à un rythme soutenu, telles sont les tâches principales du plongeur. Il est le garant du respect des normes d’hygiène. Son rôle est essentiel au bon fonctionnement de la cuisine. ",
+                    "diplomeReq":"CQP ou expérience",
+                    "diplome":["CQP"]
+
+                }
+            ]
+        }
+
+]    
+
+}

@@ -1,0 +1,25 @@
+{
+    "diplome":[
+        {
+            "id":1,
+            "nameDiplome":"BTS"
+        },
+        {
+            "id":2,
+            "nameDiplome":"DTH"
+        },
+        {
+            "id":3,
+            "nameDiplome":"CQP"
+        },
+        {
+            "id":4,
+            "nameDiplome":"BAC"
+        },
+        {
+            "id":5,
+            "nameDiplome":"Sans BAC"
+        }
+
+    ]
+}

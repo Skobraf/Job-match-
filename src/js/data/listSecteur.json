@@ -1,0 +1,75 @@
+{
+  "secteur": [
+              {
+                "id": 1,
+                "nameSecteur": "Tourisme",
+                "ImageSect": "tourisme-01",
+                "nameImage": "tourisme",
+                "filiere":[
+                          {
+                            "id":1,
+                            "nameFiliere":"Cuisine"
+                            
+                          },
+                          {
+                            "id":2,
+                            "nameFiliere":"Hôtellerie"
+                            
+                          },
+                          {
+                            "id":3,
+                            "nameFiliere":"Restauration"
+                            
+                          },
+                          {
+                            "id":4,
+                            "nameFiliere":"Animation"
+                            
+                          },
+                          {
+                            "id":5,
+                            "nameFiliere":"Accueil"
+                            
+                          }
+                ]
+                
+
+                
+              },
+                {
+                "id": 2,
+                "nameSecteur": "AÉRONAUTIQUE",
+                 "ImageSect": "aeronautique-01",
+                 "nameImage": "aeronautique",
+                "filiere": [
+                            {
+                              "id":6,
+                              "nameFiliere":"Cuisine1"
+                              
+                            },
+                            {
+                              "id":7,
+                              "nameFiliere":"Hôtellerie2"
+                              
+                            },
+                            {
+                              "id":8,
+                              "nameFiliere":"Restauration3"
+                              
+                            },
+                            {
+                              "id":9,
+                              "nameFiliere":"Animation4"
+                              
+                            },
+                            {
+                              "id":10,
+                              "nameFiliere":"Accueil5"
+                              
+                            }
+                       ]
+                
+              }
+  ]
+ 
+}

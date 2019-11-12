@@ -1,16 +1,15 @@
 import React from 'react';
-import List from './List';
+import { Link } from 'react-router';
+
 
 const App = () => (
-    <>
-    <div>
-      <h2>Articles</h2>
-      <List />
+    <div className="home">
+      <div>
+        <img src="" alt=""/>
+        	<p>des parcours des carrier</p>
+          <Link to="/secteur"><button>Navigate</button></Link>
+          
+      </div>
     </div>
-    <div>
-      <h2>Add a new article</h2>
-      <Form />
-    </div>
-  </>
 );
 export default App;

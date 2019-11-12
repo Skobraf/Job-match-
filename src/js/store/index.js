@@ -1,6 +1,17 @@
-import { createStore } from "redux";
+import { createStore, compose } from "redux";
+import { browserHistory } from 'react-router';
+import { syncHistoryWithStore } from'react-router-redux';
 import rootReducer from '../reducers/index';
+import diplome from '../data/getDiplome';
+import filier from '../data/listMetier';
+import secteur from '../data/listSecteur';
 
-const store = createStore(rootReducer);
+const defaultState = {
+diplome,
+filier,
+secteur
+}
 
+const store = createStore(rootReducer, defaultState);
+export const history = syncHistoryWithStore(browserHistory, store);
 export default store;
