@@ -9,7 +9,8 @@ import secteur from '../data/listSecteur';
 const defaultState = {
 diplome,
 filier,
-secteur
+secteur,
+items: {}
 }
 
 const store = createStore(rootReducer, defaultState);

@@ -1,3 +1,7 @@
-import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-
+export function handleChoice(filiere, diplome) {
+    return {
+        type: 'HANDLE_CHOICE',
+        filiere,
+        diplome
+    }
+}
