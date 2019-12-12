@@ -20,7 +20,6 @@ const mapDispatchToProps = (dispatch) => {
     )
 }
  
-
 class Job extends Component {
     state = {
         filiere: '',
@@ -29,7 +28,7 @@ class Job extends Component {
     handleClick = (e) => {
         const value = e.target.value;
         this.setState(state => {
-            let niveau = [...state.niveau];
+            const niveau = [...state.niveau];
             if(niveau.includes(value)) {
                 return { niveau: niveau.filter(e => e !== value)  };
             } else {
@@ -37,6 +36,10 @@ class Job extends Component {
             }
             
         })
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.handleChoice(this.state.filiere, this.state.niveau);
     }
     render() {
         const id = parseInt(this.props.params.id);
@@ -79,7 +82,7 @@ class Job extends Component {
                 </ul>
             </div>
             <div className="submit">
-                 <button>Go </button>
+                 <button onClick={this.handleSubmit}>Go </button>
             </div>
         </div>
         

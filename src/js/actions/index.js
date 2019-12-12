@@ -1,7 +1,8 @@
-export function handleChoice(filiere, diplome) {
+export function handleChoice(filiere, niveau) {
     return {
         type: 'HANDLE_CHOICE',
         filiere,
-        diplome
+        niveau
     }
+    
 }
