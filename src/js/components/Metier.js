@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
+import { Link, withRouter, Router} from 'react-router';
 import * as actionCreators from '../actions/index';
 import { bindActionCreators } from 'redux'; 
+
 
 const mapStateToProps = (state) => {
   return (
@@ -25,7 +26,7 @@ class Job extends Component {
         filiere: '',
         niveau: []
     }
-    handleClick = (e) => {
+    handleChange = (e) => {
         const value = e.target.value;
         this.setState(state => {
             const niveau = [...state.niveau];
@@ -37,9 +38,16 @@ class Job extends Component {
             
         })
     }
+    handleClick = (e) => {
+        const value = e.target.value;
+        this.setState({
+            filiere: value
+        })
+    }
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.handleChoice(this.state.filiere, this.state.niveau);
+        this.props.history.push('/');
     }
     render() {
         const id = parseInt(this.props.params.id);
@@ -55,6 +63,7 @@ class Job extends Component {
                             type="radio"
                             id={e.id}
                             value={e.nameFiliere}
+                            onClick={this.handleClick}
                             name="groupe"
                             />
                             <span>{e.nameFiliere}</span>
@@ -73,7 +82,7 @@ class Job extends Component {
                                     type="checkbox"
                                     value={e.nameDiplome}
                                     id={e.id}
-                                    onChange={this.handleClick}
+                                    onChange={this.handleChange}
                                   />
                                   <span>{e.nameDiplome}</span>
                               </li>
@@ -82,13 +91,13 @@ class Job extends Component {
                 </ul>
             </div>
             <div className="submit">
-                 <button onClick={this.handleSubmit}>Go </button>
+            <button onClick={this.handleSubmit}>Go </button>
             </div>
         </div>
         
     )
     }
 } 
-const Metier = connect(mapStateToProps,mapDispatchToProps)(Job);
+const Metier = withRouter(connect(mapStateToProps,mapDispatchToProps)(Job));
 
   export default Metier;

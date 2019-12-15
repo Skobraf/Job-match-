@@ -1,5 +1,5 @@
 import { createStore, compose } from "redux";
-import { browserHistory } from 'react-router';
+import { browserRouter} from 'react-router-dom';
 import { syncHistoryWithStore } from'react-router-redux';
 import rootReducer from '../reducers/index';
 import diplome from '../data/getDiplome';
@@ -15,5 +15,5 @@ items: {}
 
 
 const store = createStore(rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-export const history = syncHistoryWithStore(browserHistory, store);
+export const history = syncHistoryWithStore(browserRouter, store);
 export default store;

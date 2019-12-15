@@ -6,6 +6,7 @@ import store, { history } from './js/store/index';
 import App from './js/components/App';
 import Secteur from './js/components/Secteur';
 import Metier from './js/components/Metier';
+import Details from './js/components/Details';
 
 const router = (
     <Provider store={store}>
@@ -13,6 +14,7 @@ const router = (
             <Route path="/" exact component={App} />
             <Route path="/secteur" component={Secteur} />
             <Route path="/secteur/:id" component={Metier}/>
+            <Route path="/Details" component={Details} />
         </Router>
     </Provider>
 )
