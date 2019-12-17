@@ -1,0 +1,45 @@
+
+h2 {
+    margin-left: 20px;
+    border-left: 4px solid #F9BE00;
+    padding-left: 12px;
+}
+.submit {
+    display: flex;
+    justify-content: flex-end;     
+}
+.submit button {
+    background: #A3C961;
+    margin: 20px;
+    width: 56px;
+    height:56px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+.submit button i  {
+        color: white;
+        font-size: 20px;
+    }
+
+.submit  button:disabled {
+    background: #888888;
+    margin: 20px;
+    width: 56px;
+    height:56px;
+    border: none;
+    border-radius: 50%;
+    cursor: not-allowed;
+}
+.submit button:disabled i {
+        color: #454545;;
+        font-size: 20px;
+}
+.tg-list-item{
+	margin: 8px 20px;
+    display: flex;
+}
+.tg-list-item span {
+    margin-left:10px;
+}
+

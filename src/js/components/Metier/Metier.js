@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter, Router} from 'react-router-dom';
-import * as actionCreators from '../actions/index';
+import { withRouter} from 'react-router-dom';
+import styles from './Metier.module.css';
+import * as actionCreators from '../../actions/index';
 import { bindActionCreators } from 'redux'; 
 
 
@@ -29,8 +30,9 @@ class Job extends Component {
     }
     componentDidMount() {
         const id = parseInt(this.props.match.params.id);
+        const secteur = this.props.secteur;
         this.setState(prev => ({
-            metier: [...prev.metier, this.props.secteur[id-1].filiere]
+            metier: [...prev.metier, secteur[id-1].filiere]
         }))
     }
     handleChange = (e) => {
@@ -41,8 +43,7 @@ class Job extends Component {
                 return { niveau: niveau.filter(e => e !== value)  };
             } else {
                 return { niveau: [...niveau, value]};
-            }
-            
+            } 
         })
     }
     handleClick = (e) => {
@@ -52,10 +53,11 @@ class Job extends Component {
         })
     }
     handleSubmit = (e) => {
+        e.preventDefault();
         const id = parseInt(this.props.match.params.id);
         const title = this.props.secteur[id-1].nameSecteur;
-        e.preventDefault();
-        this.props.handleChoice(this.state.filiere, this.state.niveau, this.state.metier);
+        const {filiere, niveau, metier } = this.state;
+        this.props.handleChoice(filiere, niveau, metier);
         this.props.history.push({
             pathname: '/details',
             state: {
@@ -68,8 +70,8 @@ class Job extends Component {
         const listMetier = this.props.secteur[id - 1].filiere;
         const title = this.props.secteur[id-1].nameSecteur;
     return (
-        <div className="metier">
-            <div className="filier-list">
+        <div className={styles["metier"]}>
+            <div className={styles["filier-list"]}>
                 <h1>{title}</h1>
                 <h2>Choisis une filiere</h2>
                 <ul>
@@ -88,7 +90,7 @@ class Job extends Component {
                 </ul>
             </div>
             <br/>
-            <div className="etude-list">
+            <div className={styles["etude-list"]}>
                 <h2>Quel est ton niveaud'etude</h2>
                 <ul>
                         {
@@ -106,14 +108,13 @@ class Job extends Component {
                         }
                 </ul>
             </div>
-            <div className="submit">
-            <button onClick={this.handleSubmit}>Go </button>
+            <div className={styles["submit"]}>
+            <button onClick={this.handleSubmit}>
+                Go
+            </button>
             </div>
-        </div>
-        
+        </div>  
     )
     }
 } 
-const Metier = withRouter(connect(mapStateToProps,mapDispatchToProps)(Job));
-
-  export default Metier;
+ export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Job));
