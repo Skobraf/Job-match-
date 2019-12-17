@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import styles from './Details.module.css';
 
@@ -12,14 +12,28 @@ const mapStateToProps = (state) => {
     })
 }
 const Work = ({jobs, location, items}) => {
+    const [work,setWork] = useState([]);
+    useEffect(() => {
+        setWork(() => ({
+            work: jobs
+        })
+            
+        )
+    })
     const title = typeof location.state !== 'undefined' ? location.state.title : 'Filiere';
     const options = items.metier ? items.metier[0] : [];
+    
+    const changeSelect = (e) => {
+        console.log(e.target.value, jobs);
+    }
     return (
         <div className={styles["details"]}>
             <div className={styles["detail-head"]}>
                 {title}
             </div>
-            <div className={styles["selected-item"]}>
+            <div className={styles["selected-item"]}
+                 onChange={changeSelect}
+            >
                 <select
                     className={styles["select-item"]}
                     defaultValue={items.filiere}>
