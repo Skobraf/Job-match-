@@ -7,20 +7,33 @@ function selectorItem(state) {
 const mapStateToProps = (state) => {
     return ({
         items:state.items.items,
-        jobs: selectorItem(state)
+        jobs: selectorItem(state),
+
     })
 }
-const Work = ({jobs}) => {
+const Work = ({jobs, location, items}) => {
+    const title = typeof location.state !== 'undefined' ? location.state.title : 'Filiere';
+    const options = items.metier ? items.metier[0] : [];
     return (
         <div className="details">
-            <div className="detail-head">title</div>
+            <div className="detail-head">{title}</div>
             <div className="selected-item">
                 <select name="" id="" className="select-item">
-                    <option value="">Hello</option>
-                    <option value="">maroc</option>
+                    {
+                        options.map(e => (
+                        <option value="" key={e.id}>{e.nameFiliere}</option>
+                        ))
+                    }
                 </select>
             </div>
-            {console.log(jobs)}
+            <div className="filiere-detail">
+                <ul>
+                {jobs.length > 0 ? jobs[0].metier.map(e => (
+                <li key={e.id_metier}>{e.nameMetier}</li>
+                    )) : <p>No data</p>
+                }
+                </ul>
+            </div>
         </div>
     )
 }

@@ -24,7 +24,14 @@ const mapDispatchToProps = (dispatch) => {
 class Job extends Component {
     state = {
         filiere: '',
-        niveau: []
+        niveau: [],
+        metier: []
+    }
+    componentDidMount() {
+        const id = parseInt(this.props.match.params.id);
+        this.setState(prev => ({
+            metier: [...prev.metier, this.props.secteur[id-1].filiere]
+        }))
     }
     handleChange = (e) => {
         const value = e.target.value;
@@ -45,16 +52,25 @@ class Job extends Component {
         })
     }
     handleSubmit = (e) => {
+        const id = parseInt(this.props.match.params.id);
+        const title = this.props.secteur[id-1].nameSecteur;
         e.preventDefault();
-        this.props.handleChoice(this.state.filiere, this.state.niveau);
-        this.props.history.push('/details');
+        this.props.handleChoice(this.state.filiere, this.state.niveau, this.state.metier);
+        this.props.history.push({
+            pathname: '/details',
+            state: {
+                title
+            }
+        });
     }
     render() {
         const id = parseInt(this.props.match.params.id);
-        const listMetier = this.props.secteur[id - 1].filiere
+        const listMetier = this.props.secteur[id - 1].filiere;
+        const title = this.props.secteur[id-1].nameSecteur;
     return (
         <div className="metier">
             <div className="filier-list">
+                <h1>{title}</h1>
                 <h2>Choisis une filiere</h2>
                 <ul>
                     {listMetier.map(e => (
