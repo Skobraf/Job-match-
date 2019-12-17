@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter, Router} from 'react-router';
+import { Link, withRouter, Router} from 'react-router-dom';
 import * as actionCreators from '../actions/index';
 import { bindActionCreators } from 'redux'; 
 
@@ -47,10 +47,10 @@ class Job extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.handleChoice(this.state.filiere, this.state.niveau);
-        this.props.history.push('/');
+        this.props.history.push('/details');
     }
     render() {
-        const id = parseInt(this.props.params.id);
+        const id = parseInt(this.props.match.params.id);
         const listMetier = this.props.secteur[id - 1].filiere
     return (
         <div className="metier">

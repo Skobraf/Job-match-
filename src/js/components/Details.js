@@ -12,8 +12,14 @@ const mapStateToProps = (state) => {
 }
 const Work = ({jobs}) => {
     return (
-        <div>
-            <p>hello</p>
+        <div className="details">
+            <div className="detail-head">title</div>
+            <div className="selected-item">
+                <select name="" id="" className="select-item">
+                    <option value="">Hello</option>
+                    <option value="">maroc</option>
+                </select>
+            </div>
             {console.log(jobs)}
         </div>
     )
